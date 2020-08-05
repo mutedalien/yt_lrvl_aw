@@ -13,15 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-
-    return view('welcome')->with([
-        'tasks' => [
-        'Go to the store',
-        'Go to the market',
-        'Go to work'
-    ]]);
-});
+Route::get('/', 'PagesController@home');
 
 Route::get('/contact', function () {
     return view('contact');
