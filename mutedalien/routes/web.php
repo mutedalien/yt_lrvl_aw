@@ -23,10 +23,14 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/home', 'HomeController@index')->name('home');
+
+//PUT
+//PATCH     /projects/1
+//DELETE    /projects/1
+
 Route::get('/projects', 'ProjectsController@index');
 
 Route::post('/projects', 'ProjectsController@store');
 
 Route::get('/projects/create', 'ProjectsController@create');
-
-Route::get('/home', 'HomeController@index')->name('home');
