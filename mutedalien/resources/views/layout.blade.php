@@ -8,12 +8,11 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
 @yield('content')
-    <ul>
-        <li><a href="/">Main page</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/about">About us</a></li>
-    </ul>
+
 </body>
 </html>
 
