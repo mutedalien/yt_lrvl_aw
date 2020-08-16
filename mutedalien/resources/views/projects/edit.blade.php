@@ -15,4 +15,12 @@
         <button type="submit" name="button">Update</button>
         </div>
     </form>
+
+    <form method="POST" action="/projects/{{ $project->id }}">
+        @method('DELETE')
+        @csrf
+        <div>
+            <button type="submit" name="button">Delete</button>
+        </div>
+    </form>
 @endsection
